@@ -73,7 +73,8 @@ public class AgencyMainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Log.d("Krzys", "In getAgencies Request");
-                String url = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agency/getagencies";
+//                String url = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agency/getagencies";
+                String url = "http://10.0.0.193:8080/Group3REST-1.0-SNAPSHOT/api/agency/getagencies";
 
                 StringRequest request = new StringRequest(url, new Response.Listener<String>() {
                     @Override

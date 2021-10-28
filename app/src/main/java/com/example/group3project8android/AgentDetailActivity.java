@@ -65,7 +65,8 @@ public class AgentDetailActivity extends AppCompatActivity {
                 Executors.newSingleThreadExecutor().execute(new Runnable() {
                     @Override
                     public void run() {
-                        String postUrl = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agent/postagent/";
+//                        String postUrl = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agent/postagent/";
+                        String postUrl = "http://10.0.0.193:8080/Group3REST-1.0-SNAPSHOT/api/agent/postagent/";
                         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                         Log.d("sherwin", "after save click");
 
