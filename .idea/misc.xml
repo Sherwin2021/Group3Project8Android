@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/OOSD/Proj 207/Term 3/REST/Group3Project8Android/app/src/main/res/layout/activity_agent_detail.xml" value="0.20555555555555555" />
+        <entry key="..\:/OOSD/Proj 207/Term 3/REST/Group3Project8Android/app/src/main/res/layout/activity_agent_list_view.xml" value="0.20555555555555555" />
+        <entry key="..\:/OOSD/Proj 207/Term 3/REST/Group3Project8Android/app/src/main/res/layout/activity_main.xml" value="0.20555555555555555" />
+        <entry key="..\:/OOSD/Proj 207/Term 3/REST/Group3Project8Android/app/src/main/res/layout/activity_main_agency.xml" value="0.20555555555555555" />
+        <entry key="..\:/OOSD/Proj 207/Term 3/REST/Group3Project8Android/app/src/main/res/layout/agent_listview.xml" value="0.20555555555555555" />
         <entry key="..\:/OOSD/_Term 3 Project/Group3Project8Android/app/src/main/res/layout/activity_agent_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/OOSD/_Term 3 Project/Group3Project8Android/app/src/main/res/layout/activity_agent_list_view.xml" value="0.36666666666666664" />
         <entry key="..\:/OOSD/_Term 3 Project/Group3Project8Android/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />

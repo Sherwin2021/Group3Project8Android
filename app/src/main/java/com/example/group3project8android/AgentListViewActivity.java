@@ -63,7 +63,8 @@ public class AgentListViewActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Log.d("sherwin", "entered getAgentsFromServer()");
-                String url = "http://10.0.2.2:8080/Day4JPAEx1-1.0-SNAPSHOT/api/agents/getagents";
+//                String url = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agent/getagents";
+                String url = "http://10.0.0.193:8080/Group3REST-1.0-SNAPSHOT/api/agent/getagents";
 
                 StringRequest request = new StringRequest(url, new Response.Listener<String>() {
                     @Override
