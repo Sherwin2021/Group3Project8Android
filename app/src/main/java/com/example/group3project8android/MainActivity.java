@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnAgent = findViewById(R.id.btnAgents);
+        btnAgencies = findViewById(R.id.btnAgencies);
 
         btnAgent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +41,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnAgencies.setOnClickListener(new View.OnClickListener() {
+            /*
+             *   Krzysztof Stalmach
+             *   Project 8 - CMPP-264 Android
+             *   Agency onclick
+             */
+            @Override
+            public void onClick(View view) {
+                Executors.newSingleThreadExecutor().execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(getApplicationContext(),AgencyMainActivity.class);
+                        startActivity(intent);
+                    }
+                });
+            }
+        });
 
     }
 
