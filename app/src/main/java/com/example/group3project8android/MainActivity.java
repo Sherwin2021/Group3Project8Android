@@ -1,5 +1,11 @@
 package com.example.group3project8android;
 
+/*
+ *   Sherwin Chinprahat
+ *   Project 8 - CMPP-264 Android
+ *   Travel Experts App - Main Page
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

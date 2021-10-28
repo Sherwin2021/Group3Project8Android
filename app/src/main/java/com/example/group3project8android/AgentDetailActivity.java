@@ -1,5 +1,11 @@
 package com.example.group3project8android;
 
+/*
+ *   Sherwin Chinprahat
+ *   Project 8 - CMPP-264 Android
+ *   Controller for agent details - uses getagent/{agentId} path of REST server
+ */
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;

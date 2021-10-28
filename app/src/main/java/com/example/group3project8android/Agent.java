@@ -1,5 +1,11 @@
 package com.example.group3project8android;
 
+/*
+ *   Sherwin Chinprahat
+ *   Project 8 - CMPP-264 Android
+ *   Agent class
+ */
+
 import java.io.Serializable;
 
 public class Agent implements Serializable {
