@@ -6,6 +6,7 @@ package com.example.group3project8android;
  *   Agency Detail Activity
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,8 +28,10 @@ import org.json.JSONObject;
 
 import java.util.concurrent.Executors;
 
+import model.Agency;
+
 public class AgencyDetailActivity extends AppCompatActivity {
-    EditText etAgencyId, etAgncyAddress, etAgncyCity, etAgncyProv, etAgncyPostal, etAgncyCountry, etAgncyPhone, etAgencyFax;
+    EditText etAgencyId, etAgncyAddress, etAgncyCity, etAgncyProv, etAgncyPostal, etAgncyCountry, etAgncyPhone, etAgncyFax;
     Button btnSaveAgency, btnCancel;
 
     @Override
@@ -44,7 +47,9 @@ public class AgencyDetailActivity extends AppCompatActivity {
         etAgncyPostal = findViewById(R.id.etAgncyPostal);
         etAgncyCountry = findViewById(R.id.etAgncyCountry);
         etAgncyPhone = findViewById(R.id.etAgncyPhone);
-        etAgencyFax = findViewById(R.id.etAgncyFax);
+        etAgncyFax = findViewById(R.id.etAgncyFax);
+
+
         // initialize buttons
         btnSaveAgency = findViewById(R.id.btnSaveAgency);
         btnCancel = findViewById(R.id.btnCancel);
@@ -67,7 +72,7 @@ public class AgencyDetailActivity extends AppCompatActivity {
                     @Override
                     public void run() {
 //                        String url = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agency/postagency";
-                        String url = "http://10.0.0.193:8080/Group3REST-1.0-SNAPSHOT/api/agency/postagency";
+                        String url = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agency/postagency";
                         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                         String agencyId = String.valueOf(etAgencyId.getText());
                         String address = String.valueOf(etAgncyAddress.getText());
@@ -76,7 +81,7 @@ public class AgencyDetailActivity extends AppCompatActivity {
                         String postal = String.valueOf(etAgncyPostal.getText());
                         String country = String.valueOf(etAgncyCountry.getText());
                         String phone = String.valueOf(etAgncyPhone.getText());
-                        String fax = String.valueOf(etAgencyFax.getText());
+                        String fax = String.valueOf(etAgncyFax.getText());
 
                         JSONObject post = new JSONObject();
                         try {
@@ -99,6 +104,8 @@ public class AgencyDetailActivity extends AppCompatActivity {
                             public void onResponse(JSONObject response) {
                                 Log.d("POST RESPONSE", "onResponse: " + response.toString());
                                 Toast.makeText(getApplicationContext(), "Response successful: " + response.toString(), Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(getApplicationContext(),AgencyMainActivity.class);
+                                startActivity(intent);
                             }
                         }, new Response.ErrorListener() {
                             @Override
@@ -122,6 +129,6 @@ public class AgencyDetailActivity extends AppCompatActivity {
         etAgncyPostal.setText(agency.getAgncyPostal());
         etAgncyCountry.setText(agency.getAgncyCountry());
         etAgncyPhone.setText(agency.getAgncyPhone());
-        etAgencyFax.setText(agency.getAgncyFax());
+        etAgncyFax.setText(agency.getAgncyFax());
     }
 }

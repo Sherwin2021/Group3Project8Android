@@ -19,39 +19,10 @@
         app:srcCompat="@drawable/logo" />
 
     <LinearLayout
-        android:layout_width="180dp"
-        android:layout_height="350dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2">
-
-        <Button
-            android:id="@+id/btnAgencies"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Agencies" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Packages" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Suppliers" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="180dp"
         android:layout_height="350dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -73,6 +44,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Products" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btnAgencies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agencies" />
+
+        <Button
+            android:id="@+id/btnPackages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Packages" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suppliers" />
     </LinearLayout>
 
     <TextView

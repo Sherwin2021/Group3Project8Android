@@ -1,4 +1,4 @@
-package com.example.group3project8android;
+package model;
 
 /*
  *   Krzysztof Stalmach

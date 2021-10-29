@@ -32,6 +32,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.Executors;
 
+import model.Agent;
+
 public class AgentListViewActivity extends AppCompatActivity {
 
     ListView lvAgents;
@@ -64,7 +66,7 @@ public class AgentListViewActivity extends AppCompatActivity {
             public void run() {
                 Log.d("sherwin", "entered getAgentsFromServer()");
 //                String url = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agent/getagents";
-                String url = "http://10.0.0.193:8080/Group3REST-1.0-SNAPSHOT/api/agent/getagents";
+                String url = "http://10.0.2.2:8080/Group3REST-1.0-SNAPSHOT/api/agent/getagents";
 
                 StringRequest request = new StringRequest(url, new Response.Listener<String>() {
                     @Override
